@@ -104,6 +104,12 @@ main {
   box-shadow: 0 0 15px rgba(0,0,0,.4);
   height: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  &>article {
+    flex: 1;
+  }
 }
 
 header > .ui.container,
@@ -179,7 +185,7 @@ h3.subtitle {
     background-color: $color-light-gray !important;
     margin: 40px 0 0 0;
     padding: 14px 50px;
-    flex: 1 1 auto;
+    flex: 0;
 
     &>div {
       background-color: $color-light-gray;
