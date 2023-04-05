@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "tr" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main>
+      <div id="paper" class="ui container wrapper">
+      {{ content }}
+      {% include footer.html %}
+      </div>
+    </main>
+
+    <p id="copyright" build="{% build_version %}">
+      © Kod Gemisi, {{ site.time | date: '%Y' }}
+    </p>
+
+    </div> <!-- closes #bodyWrapper -->
+
+  </body>
+
+</html>

@@ -1,0 +1,100 @@
+---
+title: İletişim
+layout: default
+style: common
+last_modified_at: 2017-05-15
+script: contact
+---
+
+<article>
+  <section class="entry-image" style="background-image: url('/static/images/iletisim-banner.jpg')"></section>
+  <header class="entry-header">
+    <h1 class="entry-title">İletişim</h1>
+  </header>
+  <div class="entry-content mobile-no-padding">
+    <div class="ui equal width stackable grid">
+      <div class="column">
+        <div class="ui top attached tabular menu">
+          <a class="active item" data-tab="quote">Teklif</a>
+          <a class="item" data-tab="hr">IK</a>
+        </div>
+        <div class="ui bottom attached active tab segment mobile-contact-form-padding" data-tab="quote">
+          <p style=" text-align: center; height: 200px;">Teklif konuları ile ilgili iletişim için lütfen <em>satis@kodgemisi.com</em> e-posta adresini kullanınız.</p>
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="hr">
+          <p style=" text-align: center; height: 200px;">İnsan kaynakları ile ilgili iletişim için lütfen <em>ik@kodgemisi.com</em> e-posta adresini kullanınız.</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <p>Kod Gemisi Bilişim Sanayi ve Ticaret Limited Şirketi</p>
+        <div class="ui list">
+          <div class="item">
+            <i class="mail icon"></i>
+            <div class="content">
+              selam@kodgemisi.com
+            </div>
+          </div>
+          <div class="item">
+            <i class="call icon"></i>
+            <div class="content">
+              +90 850 885 0 563
+            </div>
+          </div>
+          <div class="item">
+            <i class="building icon"></i>
+            <div class="content">
+              Küçükbakkalköy mah. Ayşe Hatun Çeşme sok. No:5 Daire:12 Parlak Plaza, Ataşehir, İSTANBUL
+            </div>
+          </div>
+          <div class="item">
+            <i class="code icon"></i>
+            <div class="content">
+              Çınarlı mah. 1572 sok. No:33 Withco Coworking, Konak, İZMİR
+            </div>
+          </div>
+
+        </div>
+        <hr/>
+        <h4>İş ve Staj Başvuruları</h4>
+        Tüm başvurularınız için lütfen <a href="/kariyer/">kariyer sayfası</a>nı kullanınız.
+      </div>
+    </div>
+    <p>&nbsp;</p>
+
+    <div class="ui text container mobile-show">
+      <h4>Haritada Göster</h4>
+      <p>
+        <a href="https://maps.apple.com/?address=kod gemisi izmir" target="_blank"><i class="marker icon"></i> Kod Gemisi Merkez</a>
+      </p>
+      <p>
+        <a href="https://maps.apple.com/?address=dumankaya flex ataşehir istanbul" target="_blank"><i class="marker icon"></i> Kod Gemisi İstanbul Şubesi</a>
+      </p>
+    </div>
+
+    <div class="ui top attached tabular menu mobile-hide">
+      <a class="active item" data-tab="istanbul">İstanbul Ofisi</a>
+      <a class="item" data-tab="hq">İzmir Ar-Ge Ofisi</a>
+    </div>
+    <div class="ui bottom attached active tab segment mobile-hide" data-tab="istanbul">
+      <iframe class="googlemap" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.0602721065743!2d29.103750850523472!3d40.98016102900271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac639b4ad4c49%3A0xffd2464a50429d6a!2sParlak%20Plaza!5e0!3m2!1sen!2str!4v1577779498997!5m2!1sen!2str" width="100%" height="450" frameborder="0"  allowfullscreen></iframe>
+    </div>
+    <div class="ui bottom attached tab segment mobile-hide" data-tab="hq">
+      <iframe class="googlemap" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.9903748070824!2d27.16963745044164!3d38.441691281182145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9c76c7830ff%3A0x7b559b8669fecbed!2sWithco%20Coworking!5e0!3m2!1sen!2str!4v1577779555672!5m2!1sen!2str" width="100%" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+
+  </div>
+</article>
+
+<script>
+//http://stackoverflow.com/a/11744120/878361
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = document.body,
+    x = w.innerWidth || e.clientWidth || g.clientWidth;
+    if(x <= 768) {
+      document.querySelector('.googlemap').remove()
+      document.querySelector('.googlemap').remove()
+    }
+</script>

@@ -1,0 +1,88 @@
+<nav class="mobile-hide">
+  <div class="ui container">
+    <div class="ui horizontal list">
+      <div class="item">
+        <a href="/" class="item">Anasayfa</a>
+      </div>
+      <div class="item ">
+        <div class="ui dropdown">
+          <span class="popup-activator">Çözümlerimiz <i class="dropdown icon"></i></span>
+          <div class="ui flowing popup bottom left transition hidden" style="width: 870px">
+
+            <div id="solutionMenu" class="ui three column relaxed divided grid">
+              <a href="/atlassian/" class="column">
+                <h4 class="ui header">Atlassian Ürünleri</h4>
+                <div class="ui list">
+                  <div class="item"><i class="caret right icon"></i> Lisanslama</div>
+                  <div class="item"><i class="caret right icon"></i> Kurulum</div>
+                  <div class="item"><i class="caret right icon"></i> Yapılandırma</div>
+                  <div class="item"><i class="caret right icon"></i> Özelleştirme</div>
+                  <div class="item"><i class="caret right icon"></i> Eklenti Geliştirme</div>
+                  <div class="item"><i class="caret right icon"></i> Eğitim</div>
+                </div>
+              </a>
+              <a href="/yazilim/" class="column">
+                <h4 class="ui header">Yazılım Geliştirme</h4>
+                <div class="ui list">
+                  <div class="item"><i class="caret right icon"></i> Kurumunuza özel çözümler</div>
+                </div>
+              </a>
+              <a href="/kurumsal-egitim/" class="column">
+                <h4 class="ui header">Kurumsal Eğitimler</h4>
+                <div class="ui list">
+                  <div class="item"><i class="caret right icon"></i> Temel Java ve Java 8 API</div>
+                  <div class="item"><i class="caret right icon"></i> Spring Framework ve Spring MVC</div>
+                  <div class="item"><i class="caret right icon"></i> Spring Boot ile Uygulama Geliştirme</div>
+                  <div class="item"><i class="caret right icon"></i> Hibernate ve JPA 2.0</div>
+                  <div class="item"><i class="caret right icon"></i> JavaEE ve JSF</div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- <div class="ui dropdown item">
+        Kurumsal
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">Applications</div>
+          <div class="item">İnsan Kaynakları</div>
+          <div class="item">Scholarships</div>
+        </div>
+      </div> -->
+      <div class="item">
+        <a href="/tayfa/" class="item">Tayfa</a>
+      </div>
+      <div class="item">
+        <a href="/kariyer/" class="item">Kariyer</a>
+      </div>
+      <div class="item">
+        <a href="https://medium.com/kodgemisi" rel="nofollow" class="item">Blog</a>
+      </div>
+      <div class="item">
+        <a href="/iletisim/" class="item">İletişim</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav class="mobile-show">
+  <div class="ui form">
+    <div class="field">
+      <select onChange="window.location.href=this.value">
+        <option>Menü</option>
+        <option value="/">Anasayfa</option>
+        <optgroup label="Çözümlerimiz">
+          <option value="/atlassian/">• Atlassian Danışmanlığı</option>
+          <option value="/yazilim/">• Yazılım Çözümleri</option>
+          <option value="/kurumsal-egitim/">• Kurumsal Eğitim</option>
+        </optgroup>
+        <option value="/tayfa/">Tayfa</option>
+        <option value="/kariyer/">Kariyer</option>
+        <option value="/blog/">Blog</option>
+        <option value="/iletisim/">İletişim</option>
+      </select>
+    </div>
+  </div>
+</nav>

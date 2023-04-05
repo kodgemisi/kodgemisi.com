@@ -1,0 +1,31 @@
+<footer class="ui basic footer segment">
+  <div>
+    <div class="ui container">
+      <div class="ui stackable grid">
+        <div class="four wide column mobile-center"></div>
+        <div class="eight wide center aligned column mobile-hide">
+          <p></p>
+        </div>
+        <div class="four wide right aligned column mobile-center">
+          <a href="https://www.linkedin.com/company/kodgemisi/" target="_blank"><i class="linkedin icon"></i></a>
+          <a href="https://twitter.com/kodgemisi" target="_blank"><i class="twitter icon"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/semantic.min.js"></script>
+
+{% if page.scripts != nil %}
+  {% for s in page.scripts %}
+    <script src="{{s}}"></script>
+  {% endfor %}
+{% endif %}
+
+{% if page.script != nil %}
+  <script src="/static/javascripts/{{page.script}}.js"></script>
+{% endif %}
+
+<script src="/static/javascripts/application.js"></script>

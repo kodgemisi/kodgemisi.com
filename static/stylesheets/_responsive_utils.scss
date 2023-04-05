@@ -1,0 +1,42 @@
+// https://github.com/Semantic-Org/Semantic-UI-LESS/blob/a742e9b04ee479851ab28d26212f6d57457542d7/themes/default/globals/site.variables#L180
+$mobileBreakpoint            : 320px;
+$tabletBreakpoint            : 768px;
+$computerBreakpoint          : 992px;
+$largeMonitorBreakpoint      : 1200px;
+$widescreenMonitorBreakpoint : 1920px;
+
+// https://github.com/Semantic-Org/Semantic-UI-LESS/blob/a742e9b04ee479851ab28d26212f6d57457542d7/themes/default/globals/site.variables#L500
+$largestMobileScreen : ($tabletBreakpoint - 1px);
+$largestTabletScreen : ($computerBreakpoint - 1px);
+$largestSmallMonitor : ($largeMonitorBreakpoint - 1px);
+$largestLargeMonitor : ($widescreenMonitorBreakpoint - 1px);
+
+
+.mobile-show {
+  display: none !important;
+}
+
+// https://github.com/Semantic-Org/Semantic-UI-LESS/blob/5ee99ea51ebffdb26b0aa36da3019661a63372bb/definitions/collections/grid.less#L441
+@media only screen and (min-width: $mobileBreakpoint) and (max-width: $largestMobileScreen) {
+
+  .mobile-center {
+    text-align: center !important;
+  }
+
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .mobile-show {
+    display: block !important;
+  }
+
+  .mobile-no-padding {
+    padding: 0 !important;
+  }
+
+  .mobile-contact-form-padding {
+    padding: 20px 0 0 0 !important;
+  }
+
+}

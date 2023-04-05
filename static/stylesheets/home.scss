@@ -1,0 +1,157 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import 'common_style';
+
+a:hover,
+a:active {
+  text-decoration: underline;
+
+  &.card {
+    text-decoration: none;
+    background-color: #fbfbfb !important;
+  }
+}
+
+#homeBanner {
+  overflow: hidden;
+  position: relative;
+
+  &>div{
+    position: absolute;
+    top: 200px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 60px;
+    font-size: 1.7rem;
+    color: #003C53;
+  }
+}
+
+#main-circles{
+  padding: 0 70px;
+}
+
+@media only screen and (min-width: $mobileBreakpoint) and (max-width: $largestMobileScreen) {
+
+  #homeBanner {
+    &>img {
+      height: 164px;
+    }
+
+    &>div {
+      top: 0;
+      padding: 20px;
+      text-align: justify;
+    }
+  }
+
+  #main-circles{
+    padding: 0;
+  }
+}
+
+#main-header {
+  margin: 50px 0;
+}
+
+#main-header > h2{
+  font-family: $header-font;
+  font-weight: 300;
+}
+
+#main-header > h5 {
+  font-family: $header-font;
+  font-weight: 300;
+}
+
+#main-customers {
+  padding: 0 70px 100px 70px;
+
+  .column {
+    text-align: center;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    color: #e8e8e8;
+  }
+
+  img {
+    transition: all 0.1s;
+    filter: grayscale(1);
+    margin: 0;
+
+    &:hover {
+      filter: grayscale(0);
+      transform: scale(1.1,1.1);
+    }
+  }
+
+}
+
+#partner-header {
+  margin: 50px 0;
+}
+
+#partner-header > h2{
+  font-family: $header-font;
+  font-weight: 300;
+}
+
+#partner-header > h5 {
+  font-family: $header-font;
+  font-weight: 300;
+}
+
+#main-partners {
+  padding: 0 70px 100px 70px;
+
+  .column {
+    text-align: center;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    color: #e8e8e8;
+  }
+
+  img {
+    transition: all 0.1s;
+    // filter: grayscale(1);
+    margin: 0;
+
+    &:hover {
+      filter: grayscale(0);
+      transform: scale(1.1,1.1);
+    }
+  }
+
+}
+
+#easyagile {
+  padding: 10px;
+}
+
+.ui.floated.image,
+.ui.floated.images {
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+
+.slick-dots {
+  bottom: 10px !important;
+}
+
+.slick-dots li button::before {
+  color: white !important;
+  font-size: 16px !important;
+  opacity: .5;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+.ui.items>.item>.image>img {
+  border-radius: 500rem;
+}

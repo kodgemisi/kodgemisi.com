@@ -1,0 +1,221 @@
+@import 'colors';
+@import 'variables';
+@import 'fonts';
+@import 'responsive_utils';
+
+body {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: $common-font;
+  background: #fcfcfc;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: $common-font;
+  font-weight: 300;
+}
+
+h4, h5 {
+  font-family: $common-font;
+}
+
+#bodyWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#copyright {
+  text-align: center;
+  padding: 10px;
+  color: #aaa;
+}
+
+article .entry-content {
+  padding: 0 50px;
+}
+
+@media only screen and (min-width: $mobileBreakpoint) and (max-width: $largestMobileScreen) {
+  article .entry-content {
+    padding: 20px;
+  }
+}
+
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: $color-secondary;
+}
+
+.item.active {
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: #f5f5f5;
+  background: -moz-linear-gradient(top,#fafafa,#f5f5f5);
+  background: -webkit-linear-gradient(top,#fafafa,#f5f5f5);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fafafa),color-stop(1,#f5f5f5));
+  background: linear-gradient(top,#fafafa,#f5f5f5);
+  border-bottom: 1px solid #eee;
+  color: #444;
+  min-height: 80px;
+  max-height: 80px;
+  padding: 18px;
+}
+
+nav {
+  border-bottom: 1px solid #eee;
+  line-height: 2.7em;
+  padding-top: .2em;
+  position: relative;
+  background-color: white;
+
+  a,
+  a:visited,
+  a:hover,
+  a:focus,
+  a:active,
+  .popup-activator {
+    font-family: Arial, sans-serif;
+    color: #444;
+  }
+
+  &.mobile-show {
+    margin: 15px;
+    background: transparent;
+    border: 0;
+  }
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+#paper {
+  box-shadow: 0 0 15px rgba(0,0,0,.4);
+  height: 100%;
+  background-color: white;
+}
+
+header > .ui.container,
+nav > .ui.container {
+  width: 980px;
+}
+
+.shadow {
+  box-shadow: $shadow-standard;
+}
+
+.ui.horizontal.list > .item {
+    margin-left: 2em;
+}
+
+@media only screen and (min-width: 1200px) {
+	.ui.container {
+	    width: 1222px;
+	}
+}
+
+
+@media only screen and (min-width: 1200px){
+  .ui.grid.container {
+    width: calc(1127px - 12rem)!important;
+  }
+}
+
+
+
+// Wordpress overrides
+
+header.entry-header {
+    min-height: initial;
+    max-height: initial;
+    padding: 30px 18px;
+    background: transparent;
+    border: 0;
+}
+
+h1.entry-title {
+    font-family: $header-font;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3.subtitle {
+    font-family: $header-font;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.entry-footer {
+    padding: 50px;
+}
+
+.entry-image {
+    height: 300px;
+    background-size: cover;
+}
+
+.ui.teal.button, .ui.teal.buttons .button {
+    background-color: #348488;
+}
+
+.ui.centered.cards {
+  margin-bottom: 30px;
+}
+
+#paper > footer {
+    $footer-text-color: #aaa;
+    background-color: $color-light-gray !important;
+    margin: 40px 0 0 0;
+    padding: 14px 50px;
+    flex: 1 1 auto;
+
+    &>div {
+      background-color: $color-light-gray;
+      margin: 0 -14px;
+    }
+
+    p {
+      line-height: 55px;
+      color: $footer-text-color;
+    }
+
+    a, a:hover, a.active {
+      text-decoration: none;
+    }
+
+    a {
+      font-size: 30px;
+      line-height: 75px;
+      color: $footer-text-color;
+      padding-left: 15px;
+    }
+
+    i {
+      color: #aaa;
+    }
+}
+
+hr {
+  border-bottom: 0;
+  border: 1px solid #eee;
+  margin: 30px 0;
+}
+
+#solutionMenu {
+  a:hover {
+    text-decoration: none;
+    background-color: #fafafa;
+  }
+}
